@@ -4,3 +4,4 @@ config.cfg
 *.pyc
 *.py~
 testing/real
+env/
