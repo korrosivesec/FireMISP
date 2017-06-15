@@ -179,7 +179,7 @@ def check_for_previous_events(fireeye_alert):
             logger.debug("searching for %s result: %s", fireeye_alert.alert_id,result)
             event = check_misp_all_result(result)
 
-            if event is not False:
+            if event is not None:
                 logger.debug("found event based on Alert ID")
                 return_event = misp.get(str(event))  # not get_event!
                 return return_event
